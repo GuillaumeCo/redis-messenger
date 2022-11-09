@@ -253,7 +253,7 @@ class Connection
             $configuration['group'] = $pathParts[2] ?? $configuration['group'];
             $configuration['consumer'] = $pathParts[3] ?? $configuration['consumer'];
             if ($tls) {
-                $connectionCredentials['host'] = 'tls://'.$connectionCredentials['host'];
+                $connectionCredentials['host'] = 'tlsv1.2://'.$connectionCredentials['host'];
             }
         } else {
             $connectionCredentials = [
